@@ -1,0 +1,41 @@
+SELECT * FROM tbcliente;
+
+SELECT CPF, NOME, CEP FROM tbcliente;
+
+SELECT CPF, NOME FROM tbcliente LIMIT 5;
+
+SELECT CPF AS CPF_CLIENTE, NOME AS NOME_CLIENTE FROM tbcliente;
+
+SELECT NOME, CPF, SEXO, IDADE FROM tbcliente;
+
+SELECT * FROM tbcliente
+WHERE CIDADE = 'Rio de Janeiro';
+
+UPDATE tbproduto SET SABOR = 'Citricos' WHERE SABOR = 'Limão';
+
+SELECT * FROM tbcliente WHERE IDADE = 22;
+
+SELECT * FROM tbcliente WHERE IDADE > 22;
+
+SELECT * FROM tbcliente WHERE IDADE <= 22;
+
+SELECT * FROM tbcliente WHERE IDADE <> 22;
+
+SELECT * FROM tbcliente WHERE NOME > 'Fernando Cavalcante';
+
+SELECT * FROM tbproduto WHERE PRECO_LISTA BETWEEN 16.005 AND 16.009;
+
+SELECT * FROM tbcliente WHERE DATA_NASCIMENTO = '1995-01-13';
+
+SELECT * FROM tbcliente WHERE DATA_NASCIMENTO > '1995-01-13';
+
+SELECT * FROM tbcliente WHERE YEAR(DATA_NASCIMENTO) >= 1995;
+
+SELECT * FROM tbcliente WHERE MONTH(DATA_NASCIMENTO) = 10;
+
+
+
+
+
+
+

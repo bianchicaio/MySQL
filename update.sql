@@ -1,0 +1,4 @@
+USE sucos;
+
+UPDATE tbprodutos SET EMBALAGEM = 'garrafa', PRECO_LISTA = 5
+WHERE PRODUTO = '1040107';
